@@ -1,0 +1,5 @@
+apiVersion: v2
+name: web-chart
+description: A small practice web app
+version: 0.1.0
+appVersion: "1.27"

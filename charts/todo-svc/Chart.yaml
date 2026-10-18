@@ -1,0 +1,5 @@
+apiVersion: v2
+name: todo-svc
+description: Todo service with its own Postgres database
+version: 0.1.0
+appVersion: "1.0"

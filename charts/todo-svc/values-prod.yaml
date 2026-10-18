@@ -1,0 +1,5 @@
+database:
+  instances: 3
+  storage: 5Gi
+app:
+  replicas: 3

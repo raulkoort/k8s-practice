@@ -12,9 +12,16 @@ spec:
       labels:
         app: {{ .Release.Name }}-app
     spec:
-      containers:
+       containers:
         - name: client
           image: {{ .Values.app.image }}
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
           command: ["/bin/sh", "-c"]
           args:
             - |
